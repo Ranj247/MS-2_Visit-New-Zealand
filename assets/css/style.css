@@ -16,6 +16,21 @@
     color: #ffffff;
 }
 
+
+/* header image */
+.header-image-container {
+    height: 38.5vh;
+    width: 100%;
+    background: url('../images/h1.jpg') bottom right fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
 /* footer section */
 footer {
     bottom: 0px;
