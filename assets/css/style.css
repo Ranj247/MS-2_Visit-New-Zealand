@@ -90,6 +90,41 @@ h3 {
 }
 
 
+
+/* ------------------WHY NEW ZEALAND PAGE------------------ */
+
+.main_about {
+    padding-bottom: 80px;
+}
+
+/* carousal section */
+.carousel-item {
+    height: 55vh;
+}
+
+.carousel-inner>.carousel-item>img {
+    height: 55vh;
+    object-fit: cover;
+}
+
+/* Styling for carousel text */
+.header-text h1 {
+    margin-bottom: 23vh;
+    text-align: center;
+}
+
+
+
+/* ------------------CONTACT US PAGE------------------ */
+
+
+
+
+
+
+
+
+
 /* footer section */
 footer {
     bottom: 0px;
