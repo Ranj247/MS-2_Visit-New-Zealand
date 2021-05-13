@@ -116,7 +116,10 @@ h3 {
 
 
 /* ------------------CONTACT US PAGE------------------ */
-
+textarea {
+    resize: none;
+    height: 150px;
+}
 
 
 
