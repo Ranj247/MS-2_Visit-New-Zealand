@@ -22,8 +22,7 @@ body {
     position: relative;
 }
 
-h2,
-h3 {
+h2, h3 {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -43,11 +42,21 @@ h3 {
     color: #ffffff;
 }
 
+#navigation #logo:hover {
+    color: black;
+}
+
 
 #navigation .nav-item,
 #navigation a {
     color: #ffffff;
 }
+
+#navigation .nav-item,
+#navigation a:hover {
+    color: black;
+}
+
 
 
 /* header image */
@@ -120,11 +129,6 @@ textarea {
     resize: none;
     height: 150px;
 }
-
-
-
-
-
 
 
 
