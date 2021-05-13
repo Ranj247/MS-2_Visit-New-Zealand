@@ -85,6 +85,16 @@
         </div>
     </header>
 
+    <!-- google maps -->
+    <section id="main-home" class="mb-5 pt-1 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -118,10 +128,24 @@
     </footer>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous">
+    </script>
+
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
         integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous">
     </script>
+
+    <!-- Maps JavaScript API -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuMRjLHiDzZ67RosTKP6TsBc_pw_yqRsM&callback=initMap&libraries=&v=weekly" async>
+    </script>
+
+    <script src="assets/js/maps.js"></script>
 
 </body>
 

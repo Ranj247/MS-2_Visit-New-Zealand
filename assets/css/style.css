@@ -97,6 +97,13 @@ body {
     color: #ffffff;
 }
 
+/* google maps */
+div#map {
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+
 
 
 /* ------------------WHY NEW ZEALAND PAGE------------------ */
