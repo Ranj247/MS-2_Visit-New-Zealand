@@ -30,6 +30,32 @@
     position: relative;
 }
 
+.title-note {
+    color: white;
+}
+
+.jumbotron {
+    height: 200px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.jumbotron h2 {
+    color: #FFFFFF;
+}
+
+.btn {
+    background-color: #72A276;
+    color: #ffffff;
+    border: none;
+}
+
+
+.btn:hover {
+    background-color: #3c5d40;
+    color: #ffffff;
+}
+
 
 /* footer section */
 footer {
