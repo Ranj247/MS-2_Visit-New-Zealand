@@ -1,0 +1,23 @@
+
+
+
+
+
+
+/* ------------------HOME PAGE------------------ */
+
+/* navigation section */
+#navigation {
+    height: 3.5rem;
+    background-color: #516c94;
+}
+
+#navigation #logo {
+    color: #ffffff;
+}
+
+
+#navigation .nav-item,
+#navigation a {
+    color: #ffffff;
+}
