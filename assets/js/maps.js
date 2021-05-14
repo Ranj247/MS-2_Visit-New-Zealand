@@ -140,6 +140,7 @@ function clearMarkers() {
 
 
 function addPlaces(places, map) {
+    map.setZoom(16);
     const placesList = document.getElementById("places");
 
     clearMarkers();
@@ -153,7 +154,8 @@ function addPlaces(places, map) {
                 anchor: new google.maps.Point(17, 34),
                 scaledSize: new google.maps.Size(25, 25),
             };
-            new google.maps.Marker({
+            
+            const marker = new google.maps.Marker({
                 map,
                 icon: image,
                 title: place.name,
