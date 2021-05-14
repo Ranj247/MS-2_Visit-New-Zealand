@@ -27,9 +27,27 @@ function initialize() {
 }
 
 
+// integrating search input to the search buttons by hard coding the search buttons (searchAddress) to google maps place types
+// https://developers.google.com/maps/documentation/places/web-service/supported_types
+
+let searchAddress;
+
+let searchResults = document.getElementById("mapResults");
+let resultsList = document.getElementById("places");
+
+let tourist_attractionBtn = document.getElementById("find_tourist_attraction");
+let travel_agencyBtn = document.getElementById("find_travel_agency");
+
+tourist_attractionBtn.addEventListener("click", function () {
+    searchAddress = "tourist_attraction";
+});
+travel_agencyBtn.addEventListener("click", function () {
+    searchAddress = "travel_agency";
+});
+
+
 // credit : Given to Google APIs code reused and customised, 
 // see the link (https://developers.google.com/maps/documentation/javascript/examples/geocoding-component-restriction#maps_geocoding_component_restriction-javascript)
-
 
 function codeAddressSearch() {
     
