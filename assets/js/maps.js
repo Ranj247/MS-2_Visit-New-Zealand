@@ -197,6 +197,21 @@ function addPlaces(places, map) {
             li.addEventListener("click", () => {
                 map.setCenter(place.geometry.location);
             });
+
+            // created links for google result that to be pushed to the document using JS 
+            let addressLocationSearch = document.getElementById("mapAddressSearch").value;
+            let placesLinksArea = document.createElement("span");
+            let placesLinksUrlAddress = document.createElement("a");
+            let placesNames = place.name;
+            placesLinksArea.appendChild(placesLinksUrlAddress);
+            li.appendChild(placesLinksArea);
+
+            placesLinksArea.setAttribute("style", "float: right");
+            placesLinksUrlAddress.setAttribute("href", "https://www.google.co.nz/search?q=" + placesNames + "&near=" + addressLocationSearch);
+            placesLinksUrlAddress.setAttribute("target", "_blank");
+            placesLinksUrlAddress.innerHTML = "Click link";
+            
         }
     }
 }
+
