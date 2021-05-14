@@ -50,29 +50,45 @@ let convenience_storeBtn = document.getElementById('find_convenience_store');
 
 tourist_attractionBtn.addEventListener("click", function () {
     searchAddress = "tourist_attraction";
+    searchResults.style.display = 'block';
+    resultsList.innerHTML = '';
 });
 travel_agencyBtn.addEventListener("click", function () {
     searchAddress = "travel_agency";
+    searchResults.style.display = 'block';
+    resultsList.innerHTML = '';
 });
 lodgingBtn.addEventListener('click', function () {
     searchAddress = 'lodging';
+    searchResults.style.display = 'block';
+    resultsList.innerHTML = '';
 });
 museumBtn.addEventListener('click', function () {
     searchAddress = 'museum';
+    searchResults.style.display = 'block';
+    resultsList.innerHTML = '';
 });
 
 car_rentalBtn.addEventListener('click', function () {
     searchAddress = 'car_rental';
+    searchResults.style.display = 'block';
+    resultsList.innerHTML = '';
 });
 
 restaurantBtn.addEventListener('click', function () {
     searchAddress = 'restaurant';
+    searchResults.style.display = 'block';
+    resultsList.innerHTML = '';
 });
 cafeBtn.addEventListener('click', function () {
     searchAddress = 'cafe';
+    searchResults.style.display = 'block';
+    resultsList.innerHTML = '';
 });
 convenience_storeBtn.addEventListener('click', function () {
     searchAddress = 'convenience_store';
+    searchResults.style.display = 'block';
+    resultsList.innerHTML = '';
 });
 
 
