@@ -22,7 +22,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
     background-color: #e1e6eb;
-    color: black;
+    color: #000;
     height: 100vh;
     width: 100%;
     position: relative;
@@ -42,7 +42,7 @@ body {
 }
 
 #navigation #logo:hover {
-    color: black;
+    color: #000;
 }
 
 
@@ -53,7 +53,7 @@ body {
 
 #navigation .nav-item,
 #navigation a:hover {
-    color: black;
+    color: #000;
 }
 
 
@@ -72,7 +72,7 @@ body {
 }
 
 .title-note {
-    color: white;
+    color: #ffffff;
 }
 
 .jumbotron {
@@ -82,7 +82,7 @@ body {
 }
 
 .jumbotron h2 {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .btn {
@@ -97,10 +97,61 @@ body {
     color: #ffffff;
 }
 
+
+
 /* google maps */
 div#map {
     height: 400px;
     margin-bottom: 10px;
+}
+
+
+/* Place Search Pagination results styling */
+#mapResults-list>ul {
+    list-style-type: none;
+    padding: 0.5px;
+    margin: 0.5px;
+    overflow-y: scroll;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+#mapResults-list>ul>li {
+    background-color: #f1f1f1;
+    padding: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+#mapResults-list>ul>li:nth-child(odd) {
+    background-color: #fcfcfc;
+}
+
+
+#mapResults-list>button {
+    padding: 0.45rem;
+    flex-grow: 0;
+    cursor: pointer;
+    background-color: #72A276;
+    font-size: 1.2rem;
+    color: #ffffff;
+    border: none;
+    border-radius: 1rem;
+    margin-bottom: 55px;
+}
+
+#mapResults-list>button:hover {
+    background-color: #3c5d40;
+    color: #ffffff;
+}
+
+#mapResults-list>button:disabled {
+    background-color: #72A276;
+    color: #ffffff;
+    cursor: auto;
 }
 
 
@@ -173,5 +224,5 @@ footer {
 }
 
 .social-networks-list li a:hover {
-    color: black;
+    color: #000;
 }
