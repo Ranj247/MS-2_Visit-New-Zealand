@@ -89,8 +89,25 @@
     <section id="main-home" class="mb-5 pt-1 pb-5">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-8">
                     <div id="map"></div>
+                </div>
+                <div class="col-4">
+                    <form>
+                        <input type="search" class="form-control border bg-light mb-1" id="exampleInputEmail1" placeholder="Type location" aria-describedby="location search">
+                        <div class="p-2 mb-2 border bg-light btn-group-vertical">
+                            <button type="submit" class="btn btn-outline-secondary">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>
+                        Results from Place Search Pagination
+                    </p>
                 </div>
             </div>
         </div>
@@ -142,7 +159,9 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuMRjLHiDzZ67RosTKP6TsBc_pw_yqRsM&callback=initMap&libraries=&v=weekly" async>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuMRjLHiDzZ67RosTKP6TsBc_pw_yqRsM&callback=initMap&libraries=&v=weekly"
+        async>
     </script>
 
     <script src="assets/js/maps.js"></script>
