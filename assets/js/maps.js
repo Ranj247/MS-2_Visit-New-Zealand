@@ -40,12 +40,39 @@ let resultsList = document.getElementById("places");
 
 let tourist_attractionBtn = document.getElementById("find_tourist_attraction");
 let travel_agencyBtn = document.getElementById("find_travel_agency");
+let lodgingBtn = document.getElementById('find_lodging');
+let museumBtn = document.getElementById('find_museum');
+let car_rentalBtn = document.getElementById('find_car_rental');
+let restaurantBtn = document.getElementById('find_restaurant');
+let cafeBtn = document.getElementById('find_cafe');
+let convenience_storeBtn = document.getElementById('find_convenience_store');
+
 
 tourist_attractionBtn.addEventListener("click", function () {
     searchAddress = "tourist_attraction";
 });
 travel_agencyBtn.addEventListener("click", function () {
     searchAddress = "travel_agency";
+});
+lodgingBtn.addEventListener('click', function () {
+    searchAddress = 'lodging';
+});
+museumBtn.addEventListener('click', function () {
+    searchAddress = 'museum';
+});
+
+car_rentalBtn.addEventListener('click', function () {
+    searchAddress = 'car_rental';
+});
+
+restaurantBtn.addEventListener('click', function () {
+    searchAddress = 'restaurant';
+});
+cafeBtn.addEventListener('click', function () {
+    searchAddress = 'cafe';
+});
+convenience_storeBtn.addEventListener('click', function () {
+    searchAddress = 'convenience_store';
 });
 
 
@@ -154,7 +181,7 @@ function addPlaces(places, map) {
                 anchor: new google.maps.Point(17, 34),
                 scaledSize: new google.maps.Size(25, 25),
             };
-            
+
             const marker = new google.maps.Marker({
                 map,
                 icon: image,
