@@ -1,4 +1,7 @@
 let map;
+
+let markers = [];
+
 const NEW_ZEALAND_BOUNDS = {
     north: -34.36,
     south: -47.35,
@@ -124,8 +127,22 @@ function codeAddressSearch() {
     );
 }
 
+
+// Credit:
+// https://developers.google.com/maps/documentation/javascript/examples/marker-remove#maps_marker_remove-javascript
+// Removes the markers from the map, but keeps them in the array.
+function clearMarkers() {
+    for (let i = 0; i < markers.length; i++) {
+        markers[i].setMap(null);
+    }
+    markers = [];
+}
+
+
 function addPlaces(places, map) {
     const placesList = document.getElementById("places");
+
+    clearMarkers();
 
     for (const place of places) {
         if (place.geometry && place.geometry.location) {
@@ -142,6 +159,9 @@ function addPlaces(places, map) {
                 title: place.name,
                 position: place.geometry.location,
             });
+
+            markers.push(marker);
+
             const li = document.createElement("li");
             li.textContent = place.name;
             placesList.appendChild(li);
