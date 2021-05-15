@@ -1,9 +1,8 @@
 
-# [Visit New Zealand]()
+# [Visit New Zealand](https://ranj247.github.io/MS-2_Visit-New-Zealand/)
 
   
-
-The aim of this project is to..
+The aim of this project is to provide travel guide for New Zealand and highlight the **5 biggest cities in New Zealand and what to do there**. This website has been created for my second milestone project as part of the Diploma in Full Stack Software Development course with Code Institute. The website is responsive on all device sizes.
 
   
   
@@ -52,7 +51,7 @@ Please click on the image to open link in a new browser window.
 
   
 
-A live demo can be found - [here]()
+A live demo can be found - [here](https://ranj247.github.io/MS-2_Visit-New-Zealand/)
 
   
 
