@@ -101,12 +101,11 @@ body {
 
 /* google maps */
 div#map {
-    height: 400px;
+    height: 550px;
     margin-bottom: 10px;
 }
 
 #mapResults {
-    height: 21vh;
     margin-bottom: 0.5rem;
     display: none;
 }

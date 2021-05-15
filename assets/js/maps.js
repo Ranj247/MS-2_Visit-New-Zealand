@@ -47,6 +47,8 @@ let restaurantBtn = document.getElementById('find_restaurant');
 let cafeBtn = document.getElementById('find_cafe');
 let convenience_storeBtn = document.getElementById('find_convenience_store');
 
+let loadMoreBtn = document.getElementById("more");
+
 
 tourist_attractionBtn.addEventListener("click", function () {
     searchAddress = "tourist_attraction";
@@ -153,10 +155,15 @@ function codeAddressSearch() {
                         moreButton.disabled = !pagination || !pagination.hasNextPage;
 
                         if (pagination && pagination.hasNextPage) {
+
+                            loadMoreBtn.classList.remove("d-none");
+
                             getNextPage = () => {
                                 // Note: nextPage will call the same handler function as the initial call
                                 pagination.nextPage();
                             };
+                        } else {
+                            loadMoreBtn.classList.add("d-none");
                         }
                     }
                 );
@@ -226,8 +233,7 @@ function addPlaces(places, map) {
             placesLinksUrlAddress.setAttribute("href", "https://www.google.co.nz/search?q=" + placesNames + "&near=" + addressLocationSearch);
             placesLinksUrlAddress.setAttribute("target", "_blank");
             placesLinksUrlAddress.innerHTML = "Click link";
-            
+
         }
     }
 }
-
