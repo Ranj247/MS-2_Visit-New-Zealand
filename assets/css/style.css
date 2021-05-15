@@ -33,7 +33,7 @@ body {
 
 /* navigation section */
 #navigation {
-    
+
     background-color: #516c94 !important;
 }
 
@@ -236,4 +236,13 @@ footer {
 
 .social-networks-list li a:hover {
     color: #000;
+}
+
+
+/* media queries */
+
+@media (max-width:230px) {
+    .copyright p {
+        display: none;
+    }
 }
