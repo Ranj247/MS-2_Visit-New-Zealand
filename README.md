@@ -163,53 +163,90 @@ I have decided on an attractive landing page showcasing hero image with catchy w
 The image selection has been carefully chosen to showcase beautiful monuments and landscapes of New Zealand.
 
 ***
-
   
-
 ## Features
 
-  
-
 **Existing Features**
+- Designed with HTML5, CSS3, JavaScript and Bootstrap5.
 
+- Website has three different pages, Home, Why New Zealand?, Contact US.
 
+- It is a fully responsive website hat allows the user to use it on any device.
 
-**Features Left to Implement when skills develop**
-
-  
-
-- ...
-- ...
 ***
-
-  
 
 ## Technologies Used
 
-  
-
 **1. Languages**
 
- 
-
-**4. Other**
-
-
-**5. IDE Extensions used in GitPod**
+- [HTML5](https://en.wikipedia.org/wiki/HTML5) - the current standard that is used.
+- [CSS3](https://en.wikipedia.org/wiki/CSS) - the current standard that is used.
+- [CSS3](https://en.wikipedia.org/wiki/JavaScript) - the current standard that is used.
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript).
 
 
+**2. Integrations**
+
+- [Bootstrap](https://getbootstrap.com/) - by linking via Bootstrap CDN to HTML Doc making the design responsive. 
+- [Font Awesome](https://fontawesome.com/) - Icons for Social Media links in Footer and Tours section
+- [Google Fonts](https://fonts.google.com/) - to import typography of the website into the stylesheet file.
+- [Google Developers Console](https://console.cloud.google.com/apis/dashboard?project=erudite-cycle-307422&folder=&organizationId=) to get the APIs used on the site.
+- [EmailJS](https://www.emailjs.com/) - Java script code given to make Contact Form functional 
+
+**3. API**
+
+This site uses following APIs:
+
+1.  [Google Maps JavaScript API](https://developers.google.com/maps/documentation/places/web-service/overview) used to create the map
+    - On the loading of the website, google map show Auckland as being the center location, and the map is restricted to New Zealand which means the user cannot leave New Zealand bounds. 
+    - The textual information is provided to the user through the landing page to direct the user to the google maps and search for beautiful places in New Zealand.  
+    - Next to the map, there is a search bar to type location and adjusant to the search bar, there are various buttons which provides the user with different search options such as tourist attractions, travel agencies, accommodation, museums, car rentals, restaurants, cafes, and convenience stores. When buttons are clicked, map is filled with the markers and a results list is generated. Furthermore, when the next button is clicked, a new list is shown along with the new markers on the map.
+    - The results list shows name of the business and a clickable google New Zealand search link which opens in a new tab where the user can go ahead and get further information. 
+    
+2.  [EmailJS](https://dashboard.emailjs.com/sign-in) used to allow the user to send a message via the contact form.
+
+
+
+
+**4. Workspace, version control and Repository storage**
+
+- [GitPod](https://github.com/mkuti/corklagos-venture/blob/master/gitpod.io)- Main workspace IDE (Integrated Development Environment)
+- [Git](https://git-scm.com/) - Distributed Version Control tool to store versions of files and track changes.
+- [GitHub](https://github.com/) - A cloud-based hosting service to manage my Git repositories.
+
+**5. Other**
+- [Autoprefixer](https://autoprefixer.github.io/) Parses CSS and adds vendor prefixes.
+- [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly) Mobile-friendly check on site.
+- [Website Page Test](https://www.webpagetest.org/) Runs a website speed test from multiple locations around the globe using real browsers (IE and Chrome) and at real consumer connection speeds. 
+- [Online-Spellcheck](https://www.online-spellcheck.com/) Online spelling and grammar checks.
+- [Resizeimage](https://resizeimage.net/) - for photo editing 
+- [compresspng](https://compresspng.com/) - for photo editing
+
+
+**6. IDE Extensions used in GitPod**
+- Auto Close Tag
+- Bootstrap 4 CDN Snippet
+- Prettier - Code Formatter
+- Bracket Pair Colorizer
+- Code spell Checker
+- FontAwesome Auto-complete
 
 ***
-
-  
 
 ## Resources
 
-  
+- [Code Institute Course Content](https://courses.codeinstitute.net/login) -Main source of fundamental knowledge.
+- [youtube](https://www.youtube.com/) - General resource.
+- [Stack Overflow](https://stackoverflow.com/) -General resource.
+- [Google chrome developer tools](https://developer.chrome.com/docs/devtools/) - used to check page elements, help debug issues with the site layout and test different CSS styles and console JS.
+- [w3schools](https://www.w3schools.com/default.asp)-General resource.
+- [Balsamic](https://balsamiq.com/wireframes/) - Wireframing design tool to create wireframes.
+- [Am I Responsive](http://ami.responsivedesign.is/) - Responsive website mockup image generator.
+- [Colors](https://coolors.co/) - color schemes generator.
+- [Contrast checker](https://webaim.org/resources/contrastchecker/) -contrast color checker
+
 
 ***
-
-  
 
 ## Testing
 
