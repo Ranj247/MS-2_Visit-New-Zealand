@@ -304,58 +304,111 @@ Again the values are coming from the Maps JavaScript APIs functions.
 
 
 **Project barriers and solutions**
+- Encountered an issue with the navbar where the navbar menu items wouldn't push down the hero image when the toggled menu bar was clicked, this was due to the height was specified to the navbar heading which was restricting the lowering down of the menu. So the height value was removed from the css style.
+- Encountered an issue with the markers on the map where the markers were not clearing of the map when a different search button was clicked. Solution to the issue was searched through the Maps JavaScript API documentation and clearMarkers() was added.
+- Encountered issues with the HTML validator checker where maps section needed a heading so to resolve this and make the web page highly interactive, earlier jumbotron was removed from the hero image and the heading from their added just on the top of the maps section.
+ - Another issue seen in the HTML page was the aria label attribute, researched for the issue and find solution on the stack overflow and so just needed to change aria-describedby to aria label because there was no matching id for it. 
+- Encountered issues with the Color Contrast checker where the color contrast of the button background color didn't blended with the white font color, so to resolve this changed the font color to balck, and the cotrast test was passed.
 
-- ..
+
+..
 
   
 
 **Code validity**
-
-
-  
+- HTML - [Markup Validation W3C Service](https://validator.w3.org/)
+- CSS - [Jigsaw  Validation W3C Service](https://jigsaw.w3.org/css-validator/)
 
 **Version Control**
-
 - Used Git for version control.
-
-  
 
 **Deployment**
 
-  
+**GitHub Pages**
+
+This project has been deployed on GitHub Page. To deploy it, follow the steps:
+- All code was written on Gitpod, an online IDE.
+- The code was then pushed to GitHub where it is stored in my [Repository](https://ranj247.github.io/MS-2_Visit-New-Zealand/).
+- At the top of the Repository, click on the "Settings" Button on the menu.
+- Scroll down the Settings page and find the "GitHub Pages" Section.
+- Under "Source"click on the drop-down, and select the "Master" branch.
+- Once selected, this publishes the project to GitHub Pages and displays the site's url.
+- There is no difference between the deployed version and the development version.
+- There is one API used in this project. The API key is a unique identifier that authenticates requests associated with your project.
 
 
-***
+**To create an API key in Google map API:**
 
+You will need your gmail account then you have to create a billing account at [developers.google.com](https://developers.google.com/maps/gmp-get-started).
+  1. Go to the APIs & Services > Credentials page [developers.google.com](https://developers.google.com/maps/documentation/javascript/get-api-key) and get your own account and your own key.
+  3. On the Credentials page, click Create credentials > API key. The API key created dialog displays your created API key.
+  4. Click Close. The new API key is listed on the Credential page. Remember to restrict the API key before using it in projects.
   
-  
-  
+
+**To ensure EmailJS API works**
+1. Set up EmailJS account1. Create an EmailJS account.
+2. Create an email template: click on the Email Template section on the left-hand side.
+3. Click Create new template up at the top.
+4. Choose the blank template.
+5. Fill in the template and mark where the email needs to be sent to. 
+6. Click on the Test Button at the top.
+
+Connecting to EmailJS
+
+1. Go to the [EmailJS](https://www.emailjs.com/) website and choose documantation tab at the top.
+2. Choose SKD instalation on the left and copy the EmailJS SDK.
+3. Copy the code and paste the code in before the closing/head tag.
+4. Get your user ID - you can get this from the Instrucions page in the EmailJS dashboard.
+5. Paste it into your emailjs.init(). You can copy your custom EmailJS code ().
+
+**To fork the GitHub Repository**
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without
+affecting the original repository by using the following steps:
+1. Log in to GitHub and locate the [Repository](https://ranj247.github.io/MS-2_Visit-New-Zealand/).
+2. At the top right of the Repository just above the "Settings" Button on the menu, locate and click the "Fork" Button.
+3. You should have a copy of the original repository in your GitHub account now.
+
+**To make a Local Clone**
+
+1. Log in GitHub and locate the [Repository](https://ranj247.github.io/MS-2_Visit-New-Zealand/).
+2. At the top of the Repository locate the "Code" dropdown menu.
+3. To clone the repository using HTTPS, under "CLONE", make sure "HTTPS" is selected and copy the link then.
+4. Open Git Bash.
+Change the current working directory to the location where you want the cloned directory to be made.
+5. Type `git clone` and past the URL you copied in Step 3.
+`$ git clone https://github.com/Ranj247/MS-2_Visit-New-Zealand.git`
+6. Press Enter and you local clone will be created.
+
 
 ## Credits
 
-  
-
 **Media**
-
+- All pictures downloaded from [Pixabay](https://pixabay.com/), a free resources for stock-photo library.
+- Favicon icon was created using [Favicon](https://favicon.io/), a free resource to make favicon icons.
 
 **Content**
-
+- [Hikespeak](https://www.hikespeak.com/trails/mount-maunganui-tracks-tauranga-nz/) - inspiration for website content.
+- [100% Pure New Zealand](https://www.newzealand.com/ie/) - inspiration for website content.
+- [Antigua Boatshields](http://boatsheds.co.nz/) - inspiration for website content.
+- [Why Travel to New Zealand ](https://www.moatrek.com/blog/why-travel-new-zealand#:~:text=New%20Zealand%20has%20a%20dazzling,anywhere%20else%20in%20the%20world.) - inspiration for website content.
 
 
 **Code Snippets**
-
-
+- [Code Institute](https://codeinstitute.net/) - Inspiration for HERO image taken from the mini project 'Whiskey project', later used in MS1 after customisation and now used in MS2 after further customisation.
+- [EmailJS](https://www.emailjs.com/) documentation and code for sending Emails.
+[Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/e4710f80cdf34bffbd607bc102482d5c/?child=last) - tutorial for sending Emails.
+- [Bootstrap](https://getbootstrap.com/) - Bootstrap code snippets have been used through out the website mainly starter pack, navigation menu bar, cards content container, contact form and Bootstrap classes for styling the elements, providing spacing, margin, padding etc. for the sole purpose of achiving responsiveness behaviour of the website through out all the screen sizes such as mobile, tablet and large screens.  
+- Google Maps JavaScript APIs are used to create map, geocoding component restrictions to restrict the search to New Zealand only and to obtain desired search results by using the place types, and near by search creteria achieved through the place search pagination. See below the links to the APIs used.   
+ - [Place Search Pagination](https://developers.google.com/maps/documentation/javascript/examples/place-search-pagination)
+ - [Restricting Map Bounds](https://developers.google.com/maps/documentation/javascript/examples/control-bounds-restriction)
+ - [Geocoding Component Restrictions](https://developers.google.com/maps/documentation/javascript/examples/geocoding-component-restriction)
+ - [Place Types](https://developers.google.com/maps/documentation/places/web-service/supported_types)
+ - [Stack overflow](https://stackoverflow.com/questions/26071099/google-maps-api-geocode-search-nearby)
 
 ***
 
-  
-
 ## Acknowledgements
-
-
-  
-
-
-
-
+I would like to thank:
+- My mentor, **Caleb Mbakwe**, for his guidance, valuable feedbacks, and encouragement through out the project.
 ***
