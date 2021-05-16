@@ -53,13 +53,13 @@ body {
 }
 
 
-#navigation .nav-item,
-#navigation a {
+#navgation .nav-item,
+#navgation a {
     color: #ffffff;
 }
 
-#navigation .nav-item,
-#navigation a:hover {
+#navgation .nav-item,
+#navgation a:hover {
     color: #000;
 }
 
@@ -84,19 +84,6 @@ body {
     position: relative;
 }
 
-.title-note {
-    color: #ffffff;
-}
-
-.jumbotron {
-    height: 100px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, .2);
-}
-
-.jumbotron h2 {
-    color: #ffffff;
-}
 
 .btn {
     background-color: #72A276;

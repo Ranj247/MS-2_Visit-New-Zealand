@@ -38,8 +38,8 @@
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02" id="navigation">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navgation">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
@@ -61,23 +61,21 @@
         Inspiration for the below code came from mini project 'Whiskey Project', initially used in MS-1 after customization, and now further 
         used in MS2 after further customisation
         .-->
-
-    <header class="container-fluid header-image-container">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col col-xxl">
-                    <div class="jumbotron text-center">
-                        <h2 class="title-note">
-                            Search for cool places in New Zealand using the map below.
-                        </h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    <div class="container-fluid header-image-container"></div>
 
     <!-- google maps -->
     <section id="main-home" class="mb-5 pt-1 pb-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h2 class="display-5">
+                        Search below for cool places in New Zealand.
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+
         <div class="container">
             <div class="row gy-2">
 
@@ -90,7 +88,7 @@
                     <form class="mb-3" onsubmit="codeAddressSearch();return false">
                         <!-- Input field -->
                         <input type="search" class="form-control border bg-light mb-1" id="mapAddressSearch"
-                            placeholder="Type location" aria-describedby="location search" required>
+                            placeholder="Type Location" aria-label="Location Search" required>
                         <!-- Buttons -->
                         <div class="p-2 mb-2 border bg-light btn-group-vertical">
                             <button class="btn btn-outline-secondary border border-dark" type="submit"
