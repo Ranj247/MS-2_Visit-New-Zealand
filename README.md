@@ -57,9 +57,8 @@ Furthermore, after completing this project, I would be able to showcase my codin
 
 ## UX
 
-  
 
-This website design will target..
+This website will offer travel guide for New Zealand and highlight the 5 biggest cities in New Zealand and what to do there. The website will provide advance user experience in finding holiday destinations in New Zealand along with popular search options made available through the search buttons. It will also advance the site owner's goals of providing useful information to the travelleres, and also exploring the tourist attractions as being an user of the website. The user will be able to contact the site's owner through the contact section and social media links.
 
   
 
