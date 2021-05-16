@@ -250,6 +250,12 @@ This site uses following APIs:
 
 ## Testing
 
+- Test carried on the **Navbar link** which appears on the left of the menu bar to ensure it points to the Home page.
+- Test carried on the **Home, Why New Zealand? and Contact Us** pages in menu bar to ensure it points to correct page.
+- Test carried on the **Social Media icons** in the Footer to ensure the specific link opens the correct pages, and in the new tab. 
+- Test carried on the **Send** button on Contact page without filling any information to ensure that the error displays under the text box displaying 'Please fill out this field'.
+- Test carried on the **Email** input box by entering an invalid email address to ensure that an error displays under the text box displaying 'Please include an @ in the email address'.
+- Test carried on the **Emailjs** functionality by filling the contact form and clicking submit to ensure that the message is sent by receiving the alert message for successful submission of the message.
 
 - After passing the JavaScript code from the maps.js through the JavaScript code validator [JSHint](https://jshint.com/), one of the warnings appears is:
 1. Two unused variables appeared
@@ -270,25 +276,22 @@ Both the variables are Maps JavaScript APIs functions.
 
 Again the values are coming from the Maps JavaScript APIs functions.
 
+- Ran CSS through [Autoprefixer](https://autoprefixer.github.io/) and copied the resulted CSS codes back into style.css file. No errors found. 
 
-- Test carried on the **Navbar link** which appears on the left of the menu bar to ensure it points to the Home page.
-- Test carried on the **Home, Why New Zealand? and Contact Us** pages in menu bar to ensure it points to correct page.
-- Test carried on the **Social Media icons** in the Footer to ensure the specific link opens the correct pages, and in the new tab. 
-- Test carried on the **Send** button on Contact page without filling any information to ensure that the error displays under the text box displaying 'Please fill out this field'.
-- Test carried on the **Email** input box by entering an invalid email address to ensure that an error displays under the text box displaying 'Please include an @ in the email address'.
-- Test carried on the **Emailjs** functionality by filling the contact form and clicking submit to ensure that the message is sent by receiving the alert message for successful submission of the message.
+- Tested [HTML Validation](https://validator.w3.org/) 
+  - No errors found. [See results](https://res.cloudinary.com/dvsb7k8tp/image/upload/v1621133684/MS2/HTML_validator_result_l82bfu.png)
+  - No errors found. [See results](https://res.cloudinary.com/dvsb7k8tp/image/upload/v1621133684/MS2/HTML2_validator_result_i19vqn.png)
+  - No errors found. [See results](https://res.cloudinary.com/dvsb7k8tp/image/upload/v1621133684/MS2/HTML3_validator_result_yaaeuv.png)
 
-- Ran CSS through [Autoprefixer](https://autoprefixer.github.io/) and copied the resulted CSS codes back into style.css file.
+- Tested [CSS Validation](https://jigsaw.w3.org/css-validator/) No errors found. [See results](https://res.cloudinary.com/dvsb7k8tp/image/upload/v1621127722/MS2/CSS_validator_results_fhbmwm.png)
 
-- Tested [HTML Validation](https://validator.w3.org/) No errors or warnings to show.
-- Tested [CSS Validation](https://jigsaw.w3.org/css-validator/) No errors found. 
-- Checked grammar and spelling throughout document.
 - Test carried on the Responsiveness of all pages using [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly).
 - 1. [Result](https://res.cloudinary.com/dvsb7k8tp/image/upload/v1621127722/MS2/mobile_friendly_page_ofhfer.png)
 
 - Test carried on the overall site colours on [a11y](https://color.a11y.com/), a Color Contrast Accessibility Validator. 
 - 1. Test result came back with excellent results.
 - Ran README text through [Online-Spellcheck](https://www.online-spellcheck.com/) to double-check on grammar and spelling.
+- Checked grammar and spelling throughout document.
 
 **Testing User Stories**
 
@@ -309,10 +312,6 @@ Again the values are coming from the Maps JavaScript APIs functions.
 - Encountered issues with the HTML validator checker where maps section needed a heading so to resolve this and make the web page highly interactive, earlier jumbotron was removed from the hero image and the heading from their added just on the top of the maps section.
  - Another issue seen in the HTML page was the aria label attribute, researched for the issue and find solution on the stack overflow and so just needed to change aria-describedby to aria label because there was no matching id for it. 
 - Encountered issues with the Color Contrast checker where the color contrast of the button background color didn't blended with the white font color, so to resolve this changed the font color to balck, and the cotrast test was passed.
-
-
-..
-
   
 
 **Code validity**
