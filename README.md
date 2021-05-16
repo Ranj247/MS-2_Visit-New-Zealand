@@ -250,11 +250,57 @@ This site uses following APIs:
 
 ## Testing
 
-  
 
-- Test carried.. 
+- After passing the JavaScript code from the maps.js through the JavaScript code validator [JSHint](https://jshint.com/), one of the warnings appears is:
+1. Two unused variables appeared
+    18	initialize
+    100	codeAddressSearch
+Both the variables are Maps JavaScript APIs functions.
+
+2. One undefined variable
+20	google
+29	google
+115	google
+136	google
+202	google
+203	google
+204	google
+205	google
+208	google
+
+Again the values are coming from the Maps JavaScript APIs functions.
+
+
+- Test carried on the **Navbar link** which appears on the left of the menu bar to ensure it points to the Home page.
+- Test carried on the **Home, Why New Zealand? and Contact Us** pages in menu bar to ensure it points to correct page.
+- Test carried on the **Social Media icons** in the Footer to ensure the specific link opens the correct pages, and in the new tab. 
+- Test carried on the **Send** button on Contact page without filling any information to ensure that the error displays under the text box displaying 'Please fill out this field'.
+- Test carried on the **Email** input box by entering an invalid email address to ensure that an error displays under the text box displaying 'Please include an @ in the email address'.
+- Test carried on the **Emailjs** functionality by filling the contact form and clicking submit to ensure that the message is sent by receiving the alert message for successful submission of the message.
+
+- Ran CSS through [Autoprefixer](https://autoprefixer.github.io/) and copied the resulted CSS codes back into style.css file.
+
+- Tested [HTML Validation](https://validator.w3.org/) No errors or warnings to show.
+- Tested [CSS Validation](https://jigsaw.w3.org/css-validator/) No errors found. 
+- Checked grammar and spelling throughout document.
+- Test carried on the Responsiveness of all pages using [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly).
+- 1. [Result](https://res.cloudinary.com/dvsb7k8tp/image/upload/v1621127722/MS2/mobile_friendly_page_ofhfer.png)
+
+- Test carried on the overall site colours on [a11y](https://color.a11y.com/), a Color Contrast Accessibility Validator. 
+- 1. Test result came back with excellent results.
+- Ran README text through [Online-Spellcheck](https://www.online-spellcheck.com/) to double-check on grammar and spelling.
 
 **Testing User Stories**
+
+- I want to be able to search for holiday destinations in New Zealand.
+- 1. As the website is built with three pages, the home page directs a new user and a returning user to search for beautiful places in New Zealand by typing a location in the search bar and using the search buttons to find information required. The user will be provided with the search results list which would show the busines name and a clickable link, upon clicking the link, the user can find further information to complete their bookings through the google pages.
+
+- I want to be able to see tourist attractions and places of interest for the searched destination.
+- 1. The users can choose different search options by selecting different buttons as the buttons are named as per the search types. The user can search information about tourist attractions, travel agencies, accommodation, museums, car rentals, restaurants, cafes, and convenience stores near the searched locations.
+- I want to be able to search and book accomodations and restaurants for the searched destination.
+- 1. After a completed search, the users are presented with a search results list which contains name of the business and a clickable link which directs the user to a google link of New Zealand with the business details where the user can complete their bookings. 
+- I want to be able to get in touch with the site owner for any queries. 
+- 1. The users submits the contact form in a contact us section, and fill in their details and the message query and click submit. After submitting the form, the users are presented with an alert message stating if their message has been sent successfully and if not, then they need to try again to send the message. 
 
 
 **Project barriers and solutions**
