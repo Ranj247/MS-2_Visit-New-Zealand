@@ -87,14 +87,14 @@ body {
 
 .btn {
     background-color: #72A276;
-    color: #ffffff;
+    color: #000000;
     border: none;
 }
 
 
 .btn:hover {
     background-color: #3c5d40;
-    color: #ffffff;
+    color: #000000;
 }
 
 
